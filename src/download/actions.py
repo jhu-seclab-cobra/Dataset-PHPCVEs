@@ -91,7 +91,6 @@ def download_repositories(
         console.print(f"[green]Found {len(filtered_entries)} matching entries[/green]" + 
                     (f" with filters:\n" + "\n".join(f"[yellow]•[/yellow] {info}" for info in filter_info) if filter_info else ""))
         console.print()
-        
         # Process filtered entries with progress bar
         success_count = 0
         successful_entries = []  # Store successful entries for statistics
