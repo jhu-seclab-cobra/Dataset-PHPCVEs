@@ -1,6 +1,8 @@
 # PHPCVEs
 
-258 taint-style CVEs in PHP web applications (130 GitHub repositories, five CWEs, 2007–2025), each with the source code of the vulnerable commit.
+> PHP + [CVE](https://www.cve.org/) (Common Vulnerabilities and Exposures): CVE records whose fix is a commit in a PHP web application on GitHub.
+
+258 taint-style CVEs in PHP web applications, each with the source code of its vulnerable commit.
 
 ## Install
 
@@ -23,6 +25,8 @@ python tools/extract.py CVE-2010-10010     # one CVE
 Each archive is checked against the sha256 values in its `meta.json` and extracted to `cves/<CVE>/codes/`, which Git ignores. An existing `codes/` is kept unless `--force` is given.
 
 ## Dataset
+
+258 CVEs (CVE-2007-* to CVE-2025-*) in 130 GitHub repositories, labeled with five taint-style CWEs:
 
 | CWE | Weakness | CVEs |
 |---|---|---|
