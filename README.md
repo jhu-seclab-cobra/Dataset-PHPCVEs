@@ -105,4 +105,4 @@ cves/<CVE>/codes/                 extracted source (created by tools/extract.py)
 
 ## License
 
-[MIT](LICENSE). The archived source code keeps the license of its own repository.
+[GPL-2.0](LICENSE). The archived source code keeps the license of its own repository.
