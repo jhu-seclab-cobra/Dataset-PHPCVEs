@@ -1,5 +1,0 @@
-requests>=2.28.0
-rich>=13.0.0
-typer>=0.7.0
-cwe-tree==1.0.0
-repo_classifier==0.1.3
