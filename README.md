@@ -7,10 +7,18 @@
 ## Install
 
 ```bash
-git clone https://github.com/jhu-seclab-cobra/Dataset-PHPCVEs.git
+git clone --depth 1 https://github.com/jhu-seclab-cobra/Dataset-PHPCVEs.git
 ```
 
-The clone is about 2.4 GB: the compressed source archives of all 258 datapoints.
+The clone is about 2.4 GB: the compressed source archives of all 258 datapoints. To download only the datapoints you need, clone without file contents and check out those directories; `cves.csv` lists every datapoint:
+
+```bash
+git clone --depth 1 --filter=blob:none --sparse https://github.com/jhu-seclab-cobra/Dataset-PHPCVEs.git
+cd Dataset-PHPCVEs
+git sparse-checkout set tools cves/CVE-2010-10010
+```
+
+`tools/extract.py` then sees only the checked-out datapoints.
 
 ## Usage
 
